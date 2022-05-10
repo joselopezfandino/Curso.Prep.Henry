@@ -1,0 +1,18 @@
+Array:
+
+Es un arreglo que aparta un espacio en la memoria identificado con un nombre que hace referencia a distintos valores identificados por posiciones, ejemplo
+var frutas = ["mango","pera","guayaba","manzana"];
+donde para referir a mango debemos esccribir la variable frutas[0],
+pera es frutas[1], 
+guayaba es frutas[2] y 
+manzana es frutas[3].
+
+En verdad el arreglo es un objeto en javascript. Se define el nombre de la variable como un objeto y los números de las posiciones son las propiedades y 
+cada propiedad tiene su valor, ejemplo:
+
+frutas = {
+0: "mango",
+1: "pera",
+2: "guayaba",
+3: "manzana"
+}
