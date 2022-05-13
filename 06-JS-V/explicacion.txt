@@ -1,0 +1,8 @@
+* `prototype`:
+
+Sirve para definir mas métodos a un objeto.
+
+
+* _Constructors_ (de Clases)
+
+Es un método especial que se usa para inicializar un objeto cuendo se crea, que pueden recibir parametros y tener funciones especificas dentro de el.
