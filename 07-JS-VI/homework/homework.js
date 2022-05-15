@@ -4,17 +4,24 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
+  var minuscula = nombre.toLowerCase();
+  var primerletra = nombre.charAt(0).toUpperCase();
+  var resto = nombre.slice(1);
+  var datofinal = primerletra + resto;
+  return datofinal;
 }
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
+  cb();
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
+  return cb(n1,n2);
 }
 
 function sumarArray(numeros, cb) {
@@ -22,12 +29,23 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
+    var suma=0;
+    for(i=0;i<numeros.length;i++){
+      suma += numeros[i];
+    }
+    cb(suma);
 }
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
+   // for(i=0;i<array.length;i++){
+   //   cb(array[i]);
+   // }
+    array.forEach(function(elemento){
+      cb(elemento)
+    })
 }
 
 function map(array, cb) {
@@ -35,12 +53,20 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  var miarreglo = array.map(function(datos){
+    return cb(datos);
+  })
+  return miarreglo;
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
+  var mifiltro = array.filter(function(dato){
+    return dato[0] === "a" || dato[0] === "A";
+  })
+  return mifiltro;
 }
 
 // No modificar nada debajo de esta línea

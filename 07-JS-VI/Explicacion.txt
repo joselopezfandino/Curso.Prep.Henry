@@ -1,0 +1,13 @@
+* Funciones Callback:
+
+Es cuando se pasa una función como argumento a otra función, de esta forma podemos utilizar las propiedades de una función desde otra función sin necesidad
+de invocarlas, solo nos referimos al nombre de la función, ejemplo:
+
+function holamundo(usuario) {
+    return 'Hola mundo, soy ' + usuario + '!';
+}
+function saludar(usuario, cb){
+    return cb(usuario);
+}
+
+saludar("jose",holamundo); // Hola mundo, soy jose!
