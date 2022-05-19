@@ -1,0 +1,26 @@
+	h1 {
+		color: blue;
+	}
+	img {
+		width: 400px;
+	}
+	img
+	.divClass {
+		color: green;
+	}
+      #thirdDiv {
+        margin: 50px;
+		color: orange;
+        font-size: 20px;
+		height: 600px;
+		width: 500px;
+		background-color: cadetblue;
+		padding: 50px;
+		border-style: solid;
+		border-width: 5px;
+		border-color: crimson;
+      }
+      #spanId {
+        color: blue;
+		font-size: 18px;
+      }
